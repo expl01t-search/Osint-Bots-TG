@@ -1,7 +1,7 @@
 # Osint-Bots-TG
 OS1NT Bots TG — ТОП самых мощных OSINT-ботов 2025 года!
 
-• MantiCore (https://t.me/exploit_probiv_bot)
+• [MantiCore]([URL](https://t.me/exploit_probiv_bot))
 • Vektor (https://vektor.ink/?start=r_rIXOEF35UT)
 • Track Info (https://t.me/TrackIndo1r_bot) 
 • Dyxless (https://t.me/dyxl3s0S1NT_bot?start=1091284045)
