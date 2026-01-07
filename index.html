@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WBT OSINT</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;900&family=Space+Grotesk:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+    <!-- Элегантная паутина -->
+    <canvas id="web"></canvas>
+
+    <div class="container">
+        <header class="header">
+            <h1>WBT OSINT</h1>
+            <p>Личный каталог проверенных и актуальных OSINT-инструментов • 2026</p>
+        </header>
+
+        <div class="search">
+            <input type="text" id="searchInput" placeholder="Поиск по названию или описанию...">
+        </div>
+
+        <div class="categories">
+            <button class="cat-btn active" data-category="all">Все</button>
+            <button class="cat-btn" data-category="tg">Telegram-боты</button>
+            <button class="cat-btn" data-category="web">Веб-сервисы</button>
+            <button class="cat-btn" data-category="cli">CLI</button>
+            <button class="cat-btn" data-category="other">Другое</button>
+        </div>
+
+        <div class="grid" id="toolsGrid">
+            <!-- Telegram-боты с уникальными описаниями -->
+            <div class="card" data-category="tg">
+                <i class="fab fa-telegram-plane icon"></i>
+                <h3>GO DÁTA</h3>
+                <p>Зеркало мощнейшей базы данных для глубокого пробива и анализа</p>
+                <a href="https://t.me/go_data_mirror_bot?start=cl8xMDkxMjg0MDQ1" target="_blank">Открыть</a>
+            </div>
+
+            <div class="card" data-category="tg">
+                <i class="fab fa-telegram-plane icon"></i>
+                <h3>Cryven</h3>
+                <p>Профессиональный инструмент для скрытого и глубокого OSINT-пробива</p>
+                <a href="https://t.me/iscryvenbot?start=ref_1091284045" target="_blank">Открыть</a>
+            </div>
+
+            <div class="card" data-category="tg">
+                <i class="fab fa-telegram-plane icon"></i>
+                <h3>Atlas</h3>
+                <p>Атлас цифрового мира — расширенный поиск и детальный анализ связей</p>
+                <a href="https://t.me/AtlasInccbot?start=ref_1091284045" target="_blank">Открыть</a>
+            </div>
+
+            <div class="card" data-category="tg">
+                <i class="fab fa-telegram-plane icon"></i>
+                <h3>Deep 0S1NT</h3>
+                <p>Погружение в глубины интернета — максимальный сбор информации</p>
+                <a href="https://t.me/Deep0S1NT_bot?start=ref_AjWNAnEU" target="_blank">Открыть</a>
+            </div>
+
+            <div class="card" data-category="tg">
+                <i class="fab fa-telegram-plane icon"></i>
+                <h3>Sherlock</h3>
+                <p>Если след существует — Шерлок его найдёт. Классика OSINT-разведки</p>
+                <a href="https://t.me/exploit_reasearch_bot?start=_ref_IObI0W_Isrlrk" target="_blank">Открыть</a>
+            </div>
+
+            <div class="card" data-category="tg">
+                <i class="fab fa-telegram-plane icon"></i>
+                <h3>MantiCore</h3>
+                <p>Премиум-пробив высшего уровня — точность и качество на первом месте</p>
+                <a href="https://t.me/exploit_probiv_bot" target="_blank">Открыть</a>
+            </div>
+
+            <div class="card" data-category="tg">
+                <i class="fab fa-telegram-plane icon"></i>
+                <h3>Vektor</h3>
+                <p>Векторный анализ данных — многоуровневый и точный OSINT-инструмент</p>
+                <a href="https://vektor.ink/?start=r_rIXOEF35UT" target="_blank">Открыть</a>
+            </div>
+
+            <div class="card" data-category="tg">
+                <i class="fab fa-telegram-plane icon"></i>
+                <h3>FunStat</h3>
+                <p>Гигантская база Telegram — детальная статистика каналов и пользователей</p>
+                <a href="https://funstat.info/?start=01014DAC0B4100000000" target="_blank">Открыть</a>
+            </div>
+
+            <div class="card" data-category="tg">
+                <i class="fab fa-telegram-plane icon"></i>
+                <h3>BigBase</h3>
+                <p>Огромная актуальная база — мощная выдача по любым запросам</p>
+                <a href="https://hzt.href.bot/" target="_blank">Открыть</a>
+            </div>
+
+            <div class="card" data-category="tg">
+                <i class="fab fa-telegram-plane icon"></i>
+                <h3>Himera</h3>
+                <p>Химера цифрового мира — скрытый и эффективный OSINT-пробив</p>
+                <a href="https://t.me/h1m3ra0S1NT_bot?start=1091284045" target="_blank">Открыть</a>
+            </div>
+
+            <div class="card" data-category="tg">
+                <i class="fab fa-telegram-plane icon"></i>
+                <h3>Dyxless</h3>
+                <p>Бескомпромиссный инструмент для продвинутого OSINT-анализа</p>
+                <a href="https://t.me/dyxl3s0S1NT_bot?start=1091284045" target="_blank">Открыть</a>
+            </div>
+
+            <div class="card" data-category="tg">
+                <i class="fab fa-telegram-plane icon"></i>
+                <h3>White Search</h3>
+                <p>Чистый и точный поиск по открытым источникам — белый OSINT</p>
+                <a href="https://t.me/WhiteSearch_obot?start=1091284045" target="_blank">Открыть</a>
+            </div>
+
+            <div class="card" data-category="tg">
+                <i class="fab fa-telegram-plane icon"></i>
+                <h3>Track Info</h3>
+                <p>Отслеживание цифровых следов — мониторинг и сбор данных</p>
+                <a href="https://t.me/TrackIndo1r_bot" target="_blank">Открыть</a>
+            </div>
+
+            <div class="card" data-category="tg">
+                <i class="fab fa-telegram-plane icon"></i>
+                <h3>Enigma</h3>
+                <p>Разгадывает тайны интернета — загадочный и мощный OSINT-бот</p>
+                <a href="https://t.me/En1gma0S1NT_bot?start=ZB3WN9I7" target="_blank">Открыть</a>
+            </div>
+
+            <div class="card" data-category="tg">
+                <i class="fab fa-telegram-plane icon"></i>
+                <h3>Detectiva</h3>
+                <p>Цифровой детектив — полный и точный пробив 24/7</p>
+                <a href="https://t.me/DetectivaBotsq_probiv247f_bot?start=ref1091284045" target="_blank">Открыть</a>
+            </div>
+
+            <div class="card" data-category="tg">
+                <i class="fab fa-telegram-plane icon"></i>
+                <h3>Horus EYE</h3>
+                <p>Всевидящее око — максимальный пробив и сбор информации</p>
+                <a href="https://t.me/HorusEyeBot_probiv24_bot?start=1091284045" target="_blank">Открыть</a>
+            </div>
+
+            <div class="card" data-category="tg">
+                <i class="fab fa-telegram-plane icon"></i>
+                <h3>TeleSkan</h3>
+                <p>Полное сканирование Telegram — поиск по чатам и пользователям</p>
+                <a href="https://t.me/TScan_RUEKG_Robot?start=1091284045" target="_blank">Открыть</a>
+            </div>
+
+            <div class="card" data-category="tg">
+                <i class="fab fa-telegram-plane icon"></i>
+                <h3>Unamer</h3>
+                <p>Мгновенный поиск по username во всех соцсетях</p>
+                <a href="https://t.me/unamer_bot?start=ref-LA6oeMEZS0G0koZ" target="_blank">Открыть</a>
+            </div>
+
+            <div class="card" data-category="tg">
+                <i class="fab fa-telegram-plane icon"></i>
+                <h3>Octus</h3>
+                <p>Осьминог разведки — многорукий OSINT-инструмент</p>
+                <a href="https://t.me/Octocusexp_bot" target="_blank">Открыть</a>
+            </div>
+
+            <div class="card" data-category="tg">
+                <i class="fab fa-telegram-plane icon"></i>
+                <h3>SR TG</h3>
+                <p>Глубокий поиск по чатам и каналам Telegram</p>
+                <a href="https://t.me/searchforchatsbot?start=jLpeN6gvkx7x" target="_blank">Открыть</a>
+            </div>
+
+            <div class="card" data-category="tg">
+                <i class="fab fa-telegram-plane icon"></i>
+                <h3>EYE Ton</h3>
+                <p>Око в TON-сети — современный OSINT-бот</p>
+                <a href="https://t.me/EYETON_0S1NT_bot" target="_blank">Открыть</a>
+            </div>
+
+            <div class="card" data-category="tg">
+                <i class="fab fa-telegram-plane icon"></i>
+                <h3>VK Graph</h3>
+                <p>Построение графов связей пользователей ВКонтакте</p>
+                <a href="https://t.me/social_graph_osint_bot?start=1091284046" target="_blank">Открыть</a>
+            </div>
+
+            <div class="card" data-category="tg">
+                <i class="fab fa-telegram-plane icon"></i>
+                <h3>Find VK</h3>
+                <p>Точный поиск людей по имени и параметрам ВКонтакте</p>
+                <a href="https://t.me/FindNameVk_bot" target="_blank">Открыть</a>
+            </div>
+
+            <div class="card" data-category="tg">
+                <i class="fab fa-telegram-plane icon"></i>
+                <h3>VK History</h3>
+                <p>История изменений профиля и активности ВКонтакте</p>
+                <a href="https://t.me/VKHistoryRobot" target="_blank">Открыть</a>
+            </div>
+
+            <div class="card" data-category="tg">
+                <i class="fab fa-telegram-plane icon"></i>
+                <h3>Discord OS1NT</h3>
+                <p>Сбор данных и разведка по пользователям Discord</p>
+                <a href="https://t.me/discordsensorbot?start=kentId1091284045" target="_blank">Открыть</a>
+            </div>
+
+            <div class="card" data-category="tg">
+                <i class="fab fa-telegram-plane icon"></i>
+                <h3>Wh0 L0gger</h3>
+                <p>Логирование и сбор информации из разных источников</p>
+                <a href="https://t.me/EXPloger_bot" target="_blank">Открыть</a>
+            </div>
+
+            <div class="card" data-category="tg">
+                <i class="fab fa-telegram-plane icon"></i>
+                <h3>AV Inf0</h3>
+                <p>Полная информация по автомобилю (номер, VIN)</p>
+                <a href="https://t.me/avinfo?start=ref3877540" target="_blank">Открыть</a>
+            </div>
+
+            <div class="card" data-category="tg">
+                <i class="fab fa-telegram-plane icon"></i>
+                <h3>Devil 0S1NT</h3>
+                <p>Демонически мощный инструмент для глубокого пробива</p>
+                <a href="https://t.me/Devil0sint_bot?start=ref_BOz64m" target="_blank">Открыть</a>
+            </div>
+
+            <div class="card" data-category="tg">
+                <i class="fab fa-telegram-plane icon"></i>
+                <h3>Universal Search</h3>
+                <p>Универсальный поиск по всем доступным базам</p>
+                <a href="https://t.me/UnlvU79Qbot?start=1091284045" target="_blank">Открыть</a>
+            </div>
+
+            <div class="card" data-category="tg">
+                <i class="fab fa-telegram-plane icon"></i>
+                <h3>TG Puls3</h3>
+                <p>Пульс Telegram — мониторинг активности и изменений</p>
+                <a href="https://t.me/TGpulse_OS1NT_bot" target="_blank">Открыть</a>
+            </div>
+
+            <div class="card" data-category="tg">
+                <i class="fab fa-telegram-plane icon"></i>
+                <h3>Maigret</h3>
+                <p>Классический поиск по username на сотнях платформ</p>
+                <a href="https://t.me/osint_maigret_bot" target="_blank">Открыть</a>
+            </div>
+
+            <div class="card" data-category="tg">
+                <i class="fab fa-telegram-plane icon"></i>
+                <h3>EGRUL</h3>
+                <p>Поиск по ЕГРЮЛ/ЕГРИП — данные о компаниях и ИП</p>
+                <a href="https://t.me/egrul_bot" target="_blank">Открыть</a>
+            </div>
+
+            <div class="card" data-category="tg">
+                <i class="fab fa-telegram-plane icon"></i>
+                <h3>NALOG</h3>
+                <p>Проверка налогов, штрафов и задолженностей</p>
+                <a href="https://t.me/ShtrafKZBot?start=374eb34a04ff4b58b" target="_blank">Открыть</a>
+            </div>
+
+            <div class="card" data-category="tg">
+                <i class="fab fa-telegram-plane icon"></i>
+                <h3>Search Face</h3>
+                <p>Поиск похожих лиц в интернете по фото</p>
+                <a href="https://similarfaces.me/bot" target="_blank">Открыть</a>
+            </div>
+
+            <div class="card" data-category="tg">
+                <i class="fab fa-telegram-plane icon"></i>
+                <h3>Maniac OS1NT</h3>
+                <p>Безумно мощный инструмент для глубокого пробива</p>
+                <a href="https://t.me/maniacinfobot?start=ref1091284045" target="_blank">Открыть</a>
+            </div>
+
+            <div class="card" data-category="tg">
+                <i class="fab fa-telegram-plane icon"></i>
+                <h3>Hawk</h3>
+                <p>Ястреб — точная и быстрая цифровая разведка</p>
+                <a href="https://t.me/Barakaaaaaaaaaa_bot?start=bajbcieaef" target="_blank">Открыть</a>
+            </div>
+
+            <div class="card" data-category="tg">
+                <i class="fab fa-telegram-plane icon"></i>
+                <h3>CoyoteWatch</h3>
+                <p>Койот на страже — мониторинг и слежение за целями</p>
+                <a href="https://t.me/CoyoteWatch_bot?start=7Dw-PVFzWtHN1QzpG1Movi4ugCN6tI-CIS4BTicc_dc" target="_blank">Открыть</a>
+            </div>
+
+            <div class="card" data-category="tg">
+                <i class="fab fa-telegram-plane icon"></i>
+                <h3>ScanIas</h3>
+                <p>Сканирование и анализ IAS-систем</p>
+                <a href="https://t.me/ScanIasBot?start=ref_NTrDQ_c" target="_blank">Открыть</a>
+            </div>
+
+            <div class="card" data-category="tg">
+                <i class="fab fa-telegram-plane icon"></i>
+                <h3>OSINT Rāt</h3>
+                <p>Крыса в цифровых норах — скрытый сбор информации</p>
+                <a href="https://t.me/OsintRatBot?start=1bQUPz" target="_blank">Открыть</a>
+            </div>
+
+            <div class="card" data-category="tg">
+                <i class="fab fa-telegram-plane icon"></i>
+                <h3>AutoD0rk</h3>
+                <p>Автоматическое создание и выполнение Google-дорков</p>
+                <a href="https://t.me/autodorkingIK_robot" target="_blank">Открыть</a>
+            </div>
+
+            <div class="card" data-category="tg">
+                <i class="fab fa-telegram-plane icon"></i>
+                <h3>TraceUP</h3>
+                <p>Трассировка цифровых следов до источника</p>
+                <a href="https://t.me/TraceUP_bot?start=ref_1091284045" target="_blank">Открыть</a>
+            </div>
+
+            <div class="card" data-category="tg">
+                <i class="fab fa-telegram-plane icon"></i>
+                <h3>VK Os1nt</h3>
+                <p>Специализированный OSINT по платформе ВКонтакте</p>
+                <a href="https://t.me/vk_osint_graph_bot" target="_blank">Открыть</a>
+            </div>
+
+            <div class="card" data-category="tg">
+                <i class="fab fa-telegram-plane icon"></i>
+                <h3>Surik</h3>
+                <p>Добрый и надёжный помощник для повседневного OSINT</p>
+                <a href="https://t.me/dobriyttrobot?start=UofQ9W4d" target="_blank">Открыть</a>
+            </div>
+
+            <div class="card" data-category="tg">
+                <i class="fab fa-telegram-plane icon"></i>
+                <h3>OrderAnalyze</h3>
+                <p>Анализ заказов и транзакций в онлайн-магазинах</p>
+                <a href="https://t.me/MrcAnalyzeBot?start=1091284045" target="_blank">Открыть</a>
+            </div>
+
+            <div class="card" data-category="tg">
+                <i class="fab fa-telegram-plane icon"></i>
+                <h3>Graph Search</h3>
+                <p>Построение графов связей с HTML-отчётами</p>
+                <a href="https://t.me/Graph_searchbot?start=ref1091284045" target="_blank">Открыть</a>
+            </div>
+
+            <div class="card" data-category="tg">
+                <i class="fab fa-telegram-plane icon"></i>
+                <h3>Kalawaz</h3>
+                <p>Профессиональный и точный поиск по всем источникам</p>
+                <a href="https://t.me/KalawzzSearchProbot?start=ref_CA9201EE" target="_blank">Открыть</a>
+            </div>
+
+            <div class="card" data-category="tg">
+                <i class="fab fa-telegram-plane icon"></i>
+                <h3>NightSearch</h3>
+                <p>Ночной охотник — поиск в тёмных уголках интернета</p>
+                <a href="https://t.me/nightsearcherbot?start=ref_1091284045" target="_blank">Открыть</a>
+            </div>
+
+            <div class="card" data-category="tg">
+                <i class="fab fa-telegram-plane icon"></i>
+                <h3>Probivukraine</h3>
+                <p>Специализированный пробив по украинским базам</p>
+                <a href="https://t.me/probivukraine_bot?start=ref_BNb6aIrsaT" target="_blank">Открыть</a>
+            </div>
+
+            <div class="card" data-category="tg">
+                <i class="fab fa-telegram-plane icon"></i>
+                <h3>Infinity Search</h3>
+                <p>Бесконечный и безграничный поиск информации</p>
+                <a href="https://t.me/Infinitysearchocnova_bot" target="_blank">Открыть</a>
+            </div>
+
+            <!-- Остальные категории (веб, CLI, другое) — без изменений -->
+            <!-- (Вставь сюда блоки из предыдущей версии, если нужно — они остались такими же) -->
+
+        </div>
+
+        <footer>
+            <p>Для образовательных целей • Без ответственности за использование • Обновлено 2026</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
